@@ -1,0 +1,53 @@
+
+
+// Contact Page 
+
+form - Firstname, LastName, Email, City, Message and submit btn.
+
+social accounts to redirect
+
+// Social Accounts :
+
+LinkedIn  - https://www.linkedin.com/in/valliyappan-periyakaruppan/
+
+GitHub - https://github.com/Valliyappan-18
+
+HackerRank - https://www.hackerrank.com/profile/valliyappan25051
+
+LeetCode - https://leetcode.com/Valliyappan-PR/
+
+
+
+// projects :
+
+Bus Reservation Mini Application 
+
+Professional Portfolio Website
+
+
+
+// About Page 
+
+Personal Details 
+
+Experience 
+
+Education
+
+
+
+// Skills page 
+
+Skills
+
+Certification
+
+
+.. Home Page
+
+background image with contents 
+
+or 
+
+2 columns with contents  (left) and image (right)
+

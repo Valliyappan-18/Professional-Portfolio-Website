@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Lemonada:wght@300..700&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Lora:ital,wght@0,400..700;1,400..700&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap')
+
+font-family: "Poppins", sans-serif;
+
+font-family: "Lemonada", cursive;
+
+font-family: "Lobster Two", sans-serif;
+
+font-family: "Pacifico", cursive;
+
+font-family: "Lora", serif;
+
+// Font - Awesome Kit 
+
+<script src="https://kit.fontawesome.com/af5f63e109.js" crossorigin="anonymous"></script>
+
+// menu bar icon 
+
+<i class="fa-solid fa-bars"></i>
+
+// download icon
+
+<i class="fa-solid fa-download"></i>
+
+// up arrow --- go to top 
+
+<i class="fa-solid fa-arrow-up"></i>
+
+// email icon
+
+<i class="fa-solid fa-envelope"></i>
+
+// phone icon
+
+<i class="fa-solid fa-phone"></i>
+
+// home address 
+
+<i class="fa-solid fa-house"></i>
+
+// date icon
+
+<i class="fa-regular fa-calendar"></i>
+
+// denote language icon
+
+<i class="fa-solid fa-language"></i>
+
+
+
+// Sweet Alert  - CDN
+
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+// Success Message 
+
+swal("Good job!", "You clicked the button!", "success");
+
+// Error Message 
+
+swal("Good job!", "You clicked the button!", "error");
+
+
+
+
+
+
+// Email API 
+
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+
+// Example form input values: when you click the button to submit 
+
+function sendMessage(){
+    Email.send({
+    Host : "smtp.elasticemail.com",
+        Username : "valliyappan250573@gmail.com",
+        Password : "74CD246F95072EE62A0C19081CFDA8E041F5",
+        To : 'valliyappan250573@gmail.com',
+        From : "valliyappan250573@gmail.com",
+        Subject : "This is the subject",
+        Body :document.querySelector('.fname').value + " " + document.querySelector('.lname').value + " " + document.querySelector('.email').value + " "+document.querySelector('#msg').value
+    }).then(
+      message => {
+        if(message=="OK"){
+            swal("Good job!", "Message Successfully send to Valliyappan", "success");
+        }
+        else{
+            swal("Try Again", "Some issue occurs", "error");
+        }
+      }
+    );
+}
