@@ -1,0 +1,89 @@
+/* Homepage Section Styles */
+
+.Home-Contents{
+    display: flex;
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    padding: 5.7rem 7%;
+    background-image: url(/Media/Background/IMG_0831.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-origin: border-box;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+.Home-Contents .container1{
+    width: 50%;
+    padding: 25px;
+}
+.Home-Contents .container1 h2{
+    font-size: 1.7rem;
+    color: var(--bg-color);
+    letter-spacing: 0.1rem;
+}
+
+.Home-Contents .container1 h2 .name{
+    font-size: 2rem;
+    color: var(--primary-color);
+    font-weight: 900;
+}
+
+.Home-Contents .container1 .Designation{
+    font-weight: 500;
+    font-size: 1.9rem;
+    margin-top: 12px;
+    color: var(--bg-color);
+}
+
+.desc{
+    color: var(--bg-color);
+    margin-top: 18px;
+    letter-spacing: 1px;
+    word-spacing: 1.2px;
+    text-align: justify;
+    line-height: 2.1rem;
+}
+
+.btns{
+    position: relative;
+    margin-top: 25px;
+}
+
+.btns .btn{
+    position: relative;
+    width: 140px;
+    height: 35px;
+    margin: 10px 0;
+    border-radius: 5px;
+    outline: none;
+    border: 2px solid var(--bg-color);
+    font-weight: 700;
+    overflow: hidden;
+    background-color: var(--bg-color);
+    z-index: 1;
+    padding: 5px;
+}
+
+.btn:nth-child(2){
+    margin-left: 25px;
+}
+
+.btns .btn::before{
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: var(--primary-color);
+    transition: 0.5s;
+    z-index: -1;
+}
+
+.btns .btn:hover::before{
+    width: 100%;
+}

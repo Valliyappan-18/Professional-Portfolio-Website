@@ -1,0 +1,16 @@
+.project-container{
+    display: flex;
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    padding: 5.7rem 7%;
+    background-image: url(/Media/Background/BackgroundImage.jpeg);
+    height: 100vh;
+    background-size: cover;
+    background-origin: border-box;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
