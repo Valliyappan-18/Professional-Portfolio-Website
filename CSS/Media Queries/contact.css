@@ -105,6 +105,10 @@
     position: absolute;
     top: 550px;
     color: var(--bg-color);
-    transform: translate(500px,-2px);
+    /* transform: translate(500px,-2px); */
     letter-spacing: 1.2px;
+}
+
+.footer-section div{
+    padding-left: 27.8rem;
 }
