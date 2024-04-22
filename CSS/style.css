@@ -76,34 +76,33 @@ body{
 
 /* Media Query for tablet */
 
-@media (min-width: 480.1px) and (max-width: 720px) {
+@media (min-width: 480px) and (max-width: 768px) {
     body{
         max-width: 100vw;
         height: 100vh;
     }
 
+    .header-section{
+        background-color: #000;
+        height: auto;
+    }
     .header-section .navbar-container .logo-menu{
-        display: flex;
-        justify-content: space-between;
-        gap: 50px;
-        padding-left: 40px;
+        display: inline-flex;
+        gap: 120px;
+        padding: 27px;
     }
     .header-section .navbar-container .menu-icon{
         display: block;
         color: var(--bg-color);
-        font-size: 18px;
-        padding-right: 32px;
+        font-size: 24px;
     }
     .header-section .navbar-container .logo{
-        font-size: 18px;
+        font-size: 24px;
     }
 
     .header-section .navbar-container {
         display: flex;
         flex-direction: column;
-        padding-top: 18px;
-        padding-right: 140px;
-
     }
     .container1-contents{
         display: none;
@@ -121,7 +120,7 @@ body{
         text-align: center;
     }
     .container1-contents ul li a{
-        font-size: 18px;
+        font-size: 20px;
     }
 
 }
@@ -136,24 +135,28 @@ body{
 @media (min-width: 320px) and (max-width: 480px) {
     body{
         height: 100vh;
-        background-image: url(/Media/Background/BackgroundImage.jpeg);
+        background-color: #000;
+    }
+    .header-section{
+        position: sticky;
+        top: 0%;
+        width: 100vw;
+        background-color: #000;
     }
     .header-section .navbar-container .logo-menu{
         display: flex;
-        justify-content: space-around;
-        gap: 50px;
-        padding-right: 180px;
-        padding-left: 50px;
+        gap: 100px;
+        margin: 20px 10px;
     }
     
     .header-section .navbar-container .menu-icon{
         display: block;
         color: var(--bg-color);
-        font-size: 12px;
+        font-size: 14px;
         padding-right: 25px;
     }
     .header-section .navbar-container .logo{
-        font-size: 12px;
+        font-size: 14px;
     }
 
     .header-section .navbar-container {
@@ -165,11 +168,13 @@ body{
 
     .header-section .navbar-container .container1-contents ul{
         display: block;
-        margin-top: 18px;
+        margin: 10px;
+        padding: 10px;
     }
     .header-section .navbar-container .container1-contents ul li{
         border: 1px solid var(--primary-color);
         width: 100vw;
+        text-align: center;
     }
     .container1-contents ul li a{
         font-size: 12px;
