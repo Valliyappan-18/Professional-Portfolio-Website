@@ -1,16 +1,39 @@
+
+:root{
+    --text-color: #000;
+    --bg-color: #fff;
+    --font-lemonada: "Lemonada", cursive;
+    --font-lobstar: "Lobster Two", sans-serif;
+    --font-pacifico: "Pacifico", cursive;
+    --font-lora: "Lora", serif;
+    --primary-color:#007F73;
+}
 .skills-container{
     display: flex;
+    flex-direction: column;
     width: 100%;
     left: 0;
     top: 0;
     position: absolute;
     background-color: var(--bg-color);
-    color: var(--text-color);
-    padding: 5.7rem 7%;
+    padding: 5rem 20px;
     background-image: url(/Media/Background/BackgroundImage.jpeg);
     height: 100vh;
     background-size: cover;
     background-origin: border-box;
     background-repeat: no-repeat;
     z-index: -1;
+    color: var(--bg-color);
 }
+.skills-container .tech{
+    display: flex;
+    height: 60px;
+    width: 90vw;
+    justify-content: space-around;
+    position: relative;
+}
+.skills-container .tech h2{
+    font-weight: 500;
+    font-family: var(--font-lemonada);
+}
+
